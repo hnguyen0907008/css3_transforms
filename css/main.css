@@ -1,23 +1,44 @@
-.box
+body
 {
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	margin: 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 20px 0 0 20px;
+	font-size: 14px;
+}
+
+h1
+{
+	margin-bottom: 30px;
+}
+
+.button
+{
 	padding: 10px;
-	border: 3px solid black;
-	/*all 1s*/
-	transition: margin-right 1s;;
-}
-
-.box:hover
-{	
-	-moz-transform: rotate(15deg);
-	-webkit-transform: rotate(15deg);
-	-o-transform: rotate(15deg);
-	-ms-transform: rotate(15deg);
-	transform: rotate(15deg);
-	border-radius: 20px;
+	text-align: center;
+	text-decoration: none;
 	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+
+	/*Add a box shadow*/
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
 }
 
+.blue
+{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+60 */
+	background: #a9e4f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a9e4f7 0%, #0fb4e7 60%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 60%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a9e4f7 0%,#0fb4e7 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+	transition: ease-out 1s;
+}
+
+.button:active
+{
+	position: relative;
+	top: 5px;
+	transform: scale(2,3);
+}
